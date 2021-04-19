@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Terms() {
   return (
     <div className="card border-primary mb-3">
@@ -17,21 +19,22 @@ function Terms() {
           audited at 23:59 UTC on the last day of the Competition.
         </p>
         <p className="card-text">
-          3. Users’ Trading Volume will be counted only on RMT-XLM PAIR.
+          3. Only trades with RMT-XLM pairing on the SDEX will be counted
+          towards Users' final scores.
         </p>
         <p className="card-text">
-          4. The Trading Score is calculated from the the user's executed Buy
-          and Sell orders on RMT-XLM pair during the Competition period.
+          4. The Trading Score is calculated from each user's executed Buy and
+          Sell orders on RMT-XLM pairing during the Competition period.
         </p>
         <p className="card-text">
           5. Executed buy orders are worth twice as many points as executed sell
           orders for a given amount of RMT traded. EG. Buying 1000 RMT will earn
           the same amount of points as selling 2000 RMT.
         </p>
-        <p className="card-text">
+        <div className="card-text">
           6. SureRemit/SureGifts reserves the right to disqualify the User from
           the Trading Competition if they:
-          <ul>
+          <ul style={{ marginTop: "10px" }}>
             <li> use wash trading (execute their own orders)</li>
             <li>use trading bots</li>
             <li>
@@ -43,24 +46,42 @@ function Terms() {
               themselves unfair advantages over other participants
             </li>
           </ul>
-        </p>
+        </div>
         <p className="card-text">
           7. The User will be considered a Participant of the Trading
           Competition only after they sign up HERE with their Stellar public key
           and a validated email address.
         </p>
         <h4 className="card-title">PRIZE POOL: 2 MILLION RMT</h4>
+        <div className="card-text">
+          Top 20 participants will share the 2 MILLION RMT PRIZE POOL. This is
+          based on tiered prizes.
+          <ul style={{ marginTop: "10px" }}>
+            <li>Top 1-5: 200,000 RMT each</li>
+
+            <li>Top 6-10: 100,000 RMT each</li>
+
+            <li>Top 11-15: 50,000 RMT each</li>
+
+            <li>Top 15-25: 25,000 RMT each</li>
+          </ul>
+          Winners will be contacted via email. You need to respond within 48
+          hours to claim your prize or it will be forfeited.
+        </div>
         <p className="card-text">
-          PRIZE POOL: 2 MILLION RMT Top 20 participants will share the 2 MILLION
-          RMT PRIZE POOL. This is based on tiered prizes. Top 1-5: 200,000 RMT
-          Top 6-10: 100,000 RMT Top 11-15: 69, 420 RMT Top 16-20: 30,000 RMT
-          BONUS: 2,900 RMT goes to the most creative NFT about SureRemit. Go to
-          StellarNFT to mint your NFT! Winners will be contacted via email. You
-          need to respond within 48 hours to claim your prize or else it will be
-          forfeited. Note: Buy Offers scores 2X more than sell offers. Happy
-          trading!
+          *Reminder: Buy Offers scores 2X more than sell offers.
         </p>
+        <p className="card-text">Happy trading!</p>
       </div>
+      <Link to="/signup">
+        <button
+          type="button"
+          style={{ fontSize: "24px", width: "100%" }}
+          class="btn btn-info"
+        >
+          I AGREE
+        </button>
+      </Link>
     </div>
   );
 }
