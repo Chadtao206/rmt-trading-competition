@@ -6,3 +6,5 @@ export const validateAddress = (address) =>
 
 export const signup = ({ address, email }) =>
   axios.post("/api/signup", { address, email });
+
+export const getWalletAddresses = () => axios.get("/api/wallets");

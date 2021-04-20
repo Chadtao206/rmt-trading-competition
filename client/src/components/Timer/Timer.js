@@ -2,7 +2,12 @@ import { useEffect, useState } from "react";
 const startTime = new Date("4/23/2021 UTC").getTime();
 
 function Timer() {
-  const [time, setTime] = useState(new Date().toUTCString());
+  const [time, setTime] = useState({
+    days: "",
+    hours: "",
+    minutes: "",
+    seconds: "",
+  });
   useEffect(() => {
     const timer = setTimeout(() => {
       const timeleft = startTime - new Date().getTime();

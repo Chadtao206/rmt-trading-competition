@@ -5,6 +5,8 @@ import Main from "./components/Main/Main";
 import Terms from "./components/Terms/Terms";
 import Signup from "./components/Signup/Signup";
 import Timer from "./components/Timer/Timer";
+import Nav from "./components/Nav/Nav";
+import Rank from "./components/Rank/Rank";
 
 function App() {
   return (
@@ -12,10 +14,12 @@ function App() {
       <Router>
         <Banner />
         <Main>
+          <Nav />
           <Timer />
           <Switch>
             <Route exact path="/" component={Terms} />
             <Route exact path="/signup" component={Signup} />
+            <Route exact path="/rank" component={Rank} />
           </Switch>
         </Main>
       </Router>

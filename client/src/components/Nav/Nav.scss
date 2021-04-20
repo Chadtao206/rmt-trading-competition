@@ -1,0 +1,19 @@
+.nav-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  padding: 18px;
+  font-size: 16px;
+  width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-btn {
+    width: 90%;
+    font-size: 2.5vw;
+    padding: 8px 0;
+  }
+}
