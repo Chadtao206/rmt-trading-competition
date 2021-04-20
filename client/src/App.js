@@ -4,6 +4,7 @@ import { Banner } from "./components/Banner/Banner";
 import Main from "./components/Main/Main";
 import Terms from "./components/Terms/Terms";
 import Signup from "./components/Signup/Signup";
+import Timer from "./components/Timer/Timer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Router>
         <Banner />
         <Main>
+          <Timer />
           <Switch>
             <Route exact path="/" component={Terms} />
             <Route exact path="/signup" component={Signup} />

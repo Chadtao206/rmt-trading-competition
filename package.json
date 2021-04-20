@@ -24,9 +24,11 @@
   },
   "homepage": "https://github.com/Chadtao206/rmt-trading-competition#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "mongoose": "^5.12.4",
+    "nodemailer": "^6.5.0",
     "path": "^0.12.7"
   },
   "devDependencies": {

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./Terms.scss";
 
 function Terms() {
   return (
@@ -77,7 +78,7 @@ function Terms() {
         <button
           type="button"
           style={{ fontSize: "24px", width: "100%" }}
-          class="btn btn-info"
+          className="btn btn-info"
         >
           I AGREE
         </button>
