@@ -7,6 +7,7 @@ import Signup from "./components/Signup/Signup";
 import Timer from "./components/Timer/Timer";
 import Nav from "./components/Nav/Nav";
 import Rank from "./components/Rank/Rank";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/rank" component={Rank} />
           </Switch>
+          <Footer />
         </Main>
       </Router>
     </>

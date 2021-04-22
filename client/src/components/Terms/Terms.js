@@ -70,7 +70,7 @@ function Terms() {
           hours to claim your prize or it will be forfeited.
         </div>
         <p className="card-text">
-          *Reminder: Buy Offers scores 2X more than sell offers.
+          *Reminder: Buy Offers score 2X more than sell offers.
         </p>
         <p className="card-text">Happy trading!</p>
       </div>
