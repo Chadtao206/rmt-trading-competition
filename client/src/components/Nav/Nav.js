@@ -45,6 +45,20 @@ function Nav() {
           Rankings
         </button>
       </Link>
+      <Link
+        className="btn-link"
+        to="/tokens"
+        style={{
+          width: "30%",
+          fontSize: "20px",
+          display: "block",
+          textAlign: "center",
+        }}
+      >
+        <button type="button" className="btn btn-primary nav-btn">
+          RMT TOKENS
+        </button>
+      </Link>
     </div>
   );
 }

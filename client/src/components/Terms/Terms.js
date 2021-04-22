@@ -24,8 +24,9 @@ function Terms() {
           towards Users' final scores.
         </p>
         <p className="card-text">
-          4. The Trading Score is calculated from each user's executed Buy and
-          Sell orders on RMT-XLM pairing during the Competition period.
+          4. The Trading Score is calculated from the TOTAL RMT AMOUNT of each
+          user's executed Buy and Sell orders on RMT-XLM pairing during the
+          Competition period.
         </p>
         <p className="card-text">
           5. Executed buy orders are worth twice as many points as executed sell
