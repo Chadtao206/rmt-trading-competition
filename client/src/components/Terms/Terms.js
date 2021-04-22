@@ -56,7 +56,7 @@ function Terms() {
         </p>
         <h4 className="card-title">PRIZE POOL: 2 MILLION RMT</h4>
         <div className="card-text">
-          Top 20 participants will share the 2 MILLION RMT PRIZE POOL. This is
+          Top 25 participants will share the 2 MILLION RMT PRIZE POOL. This is
           based on tiered prizes.
           <ul style={{ marginTop: "10px" }}>
             <li>Top 1-5: 200,000 RMT each</li>
